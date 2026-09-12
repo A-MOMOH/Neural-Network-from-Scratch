@@ -38,7 +38,7 @@ The dataset contains:
 
 - **4,424 student records**
 - **36 input features**
-- **3 target classes**
+- **3 target classes:**
   - Dropout
   - Enrolled
   - Graduate
@@ -57,7 +57,7 @@ Feature standardization is performed using `StandardScaler`.
 
 The scaler is fit only on the training data and then applied to the validation and test sets, preventing information from the validation or test data from influencing preprocessing.
 
-A fixed random seed of `42` is used to make the experiments reproducible.
+A fixed random seed of `42` is used for reproducibility.
 
 ---
 
@@ -258,7 +258,7 @@ Xavier initialization scales the initial weights based on the number of incoming
 
 ### He Initialization
 
-He initialization scales weights based on the number of incoming connections and is commonly suited to networks using ReLU activations.
+He initialization scales weights based on the number of incoming connections and is suited to networks using ReLU activations.
 
 The initialization experiments demonstrate that the starting distribution of the weights can affect both convergence and final performance.
 
@@ -430,22 +430,29 @@ Lists the Python packages required to run the project.
 
 ## Installation
 
-### 1. Clone the repository
+### Requirements
+
+- **Python 3.13**
+- **pip**
+
+Python 3.13 was used to develop and run this project.
+
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/A-MOMOH/Neural-Network-from-Scratch.git
 cd Neural-Network-from-Scratch
 ```
 
-### 2. Install the dependencies
+### 2. Install the Dependencies
 
-Make sure Python is installed, then run:
+Install the required Python packages using:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-This installs:
+The `requirements.txt` file contains:
 
 ```text
 numpy
@@ -454,7 +461,7 @@ matplotlib
 scikit-learn
 ```
 
-### 3. Run the neural network
+### 3. Run the Neural Network
 
 Run the Python implementation with:
 
@@ -464,7 +471,7 @@ python neural_network.py
 
 The script trains the selected neural network configuration and reports its test performance.
 
-### 4. Explore the experiments
+### 4. Explore the Experiments
 
 Open:
 
@@ -478,7 +485,7 @@ using Jupyter Notebook or JupyterLab to explore the complete experiments, traini
 
 ## Technologies
 
-**Python** — primary programming language
+**Python 3.13** — primary programming language
 
 **NumPy** — neural network computations, matrix operations, forward propagation, backpropagation, and parameter updates
 
